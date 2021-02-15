@@ -1,15 +1,21 @@
-### Redeploy
-#############################
+
+# Redeploy
+```
 docker stop NestorBenchAssg
 docker login
 docker pull nestorbench/web_app_httpd_php
 sudo docker run -it --rm -d -p 80:80 --name NestorBenchAssg nestorbench/web_app_httpd_php 
-#############################
+```
 
-### Checks
-#############################
+# Checks
+```
 curl 45.62.251.120/index.html
 curl 45.62.251.120/status/alive
 curl 45.62.251.120/status/alive
-#############################
+```
+
+# Active Checks
+```
+while true;do date;curl 45.62.251.120/status/ready;sleep 1;done
+```
 
