@@ -12,7 +12,7 @@ docker ps
 ```
 curl 45.62.251.120/index.html
 curl 45.62.251.120/status/alive
-curl 45.62.251.120/status/alive
+curl 45.62.251.120/status/ready
 ```
 
 # Active Checks
