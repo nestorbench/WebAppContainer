@@ -1,4 +1,0 @@
-<?php
-$output = shell_exec('./CompareUpTime.sh');
-echo "$output";
-?>

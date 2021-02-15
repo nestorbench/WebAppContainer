@@ -1,9 +1,0 @@
-date
-echo -e "\nBuild date:\t`date`\n`date +%Y%m%d-%H:%M:%S-%s`\ni\n\n ### Hostname: $hostname\n`env`\n"> status/buildinfo
-cp status/buildinfo test.html
-docker build -t img-silverstripe .
-docker stop silverstripe
-sync
-sudo docker run -it --rm -d -p 80:80 --name silverstripe img-silverstripe 
-date
-
